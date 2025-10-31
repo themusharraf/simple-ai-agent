@@ -135,11 +135,17 @@ Bu jarayon 1-2 daqiqa davom etishi mumkin.
 
 ### **Google Gemini API Key olish:**
 
-1. **aistudio.google.com** saytiga kiring
+1. **aistudio.google.com** saytiga kiring'
 2. Google akkauntingiz bilan kiring
 3. **"Get API Key"** tugmasini bosing
+![1*2QKFbjF-e7kVeOaotv1WhA](https://github.com/user-attachments/assets/f198b03a-9dbb-4f55-b494-339c4a367794)
 4. **"Create new project"** tanlang
+![1*BLnbM3O5O4jyUwPNqX3zOw-2](https://github.com/user-attachments/assets/483746c8-941c-4537-b967-39526732a09c)
+
 5. Paydo bo'lgan kalitni **Copy** qiling
+![1*Q-wvfmlYkEMH3-njNxyPgw](https://github.com/user-attachments/assets/23d81993-6ec2-4a0b-b264-bd3122414ea4)
+
+![1*hMSVSMPeMkFa5YMYUCGlgA](https://github.com/user-attachments/assets/f3bf7d58-86e2-46a6-9a8d-80352d694dfa)
 
 ### **API Key-ni saqlash:**
 
