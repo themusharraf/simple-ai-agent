@@ -39,17 +39,44 @@ Bularning barchasi **bir necha soniyada** amalga oshadi!
 - AI o'zi qaysi toolni ishlatishni hal qiladi
 
 ### **Bizning loyihamiz qanday ishlaydi?**
-```
-Foydalanuvchi → Topshiriq beradi
-          ↓
-       AI Agent (Gemini)
-          ↓
-    Toollardan foydalanadi:
-    - Qidirish
-    - Saytni o'qish  
-    - Natijani saqlash
-          ↓
-      Tayyor javob
+```mermaid
+graph LR
+    A[👤 Foydalanuvchi] -->|Topshiriq beradi| B[🤖 AI Agent Gemini]
+    B -->|Rejalashtiradi| C{Qaysi toollardan foydalanish?}
+    C -->|1-chi qadam| D[🔍 Search Tool]
+    C -->|2-chi qadam| E[📄 Scrape Tool]
+    C -->|3-chi qadam| F[💾 Save Tool]
+    
+    D -->|Internetdan qidiradi| G[DuckDuckGo]
+    G -->|Natijalar qaytaradi| H[(Topilgan URL-lar)]
+    
+    E -->|Saytlarni ochadi| I[BeautifulSoup]
+    I -->|HTML-ni o'qiydi| J[(Sayt mazmumlari)]
+    
+    H --> K[🧠 AI Tahlil]
+    J --> K
+    
+    K -->|Ma'lumotlarni birlashtiradi| L[📊 Strukturali Ma'lumotlar]
+    L -->|Formatlaydi| M[✍️ Hisobot Tayyorlash]
+    
+    M -->|Kompaniya nomlari| N[📝 Tayyor Natija]
+    M -->|Aloqa ma'lumotlari| N
+    M -->|Murojaat xatlari| N
+    
+    N --> F
+    F -->|Faylga yozadi| O[📁 leads_output.txt]
+    O -->|Ko'rsatadi| P[✅ Foydalanuvchiga natija]
+    P --> A
+    
+    style A fill:#e1f5ff
+    style B fill:#fff4e1
+    style D fill:#e8f5e9
+    style E fill:#e8f5e9
+    style F fill:#e8f5e9
+    style K fill:#fff4e1
+    style N fill:#f3e5f5
+    style O fill:#fce4ec
+    style P fill:#e1f5ff
 ```
 
 ---
