@@ -40,43 +40,42 @@ Bularning barchasi **bir necha soniyada** amalga oshadi!
 
 ### **Bizning loyihamiz qanday ishlaydi?**
 ```mermaid
-graph LR
-    A[👤 Foydalanuvchi] -->|Topshiriq beradi| B[🤖 AI Agent Gemini]
-    B -->|Rejalashtiradi| C{Qaysi toollardan foydalanish?}
-    C -->|1-chi qadam| D[🔍 Search Tool]
-    C -->|2-chi qadam| E[📄 Scrape Tool]
-    C -->|3-chi qadam| F[💾 Save Tool]
+graph TB
+    A[👤 FOYDALANUVCHI] -->|Vancouver dan 5 ta<br/>kompaniya kerak| B[🤖 AI AGENT GEMINI]
     
-    D -->|Internetdan qidiradi| G[DuckDuckGo]
-    G -->|Natijalar qaytaradi| H[(Topilgan URL-lar)]
+    B -->|Topshiriqni tushunadi| C{Reja tuzish}
     
-    E -->|Saytlarni ochadi| I[BeautifulSoup]
-    I -->|HTML-ni o'qiydi| J[(Sayt mazmumlari)]
+    C -->|1| D[🔍 SEARCH TOOL]
+    C -->|2| E[📄 SCRAPE TOOL]
+    C -->|3| F[💾 SAVE TOOL]
     
-    H --> K[🧠 AI Tahlil]
-    J --> K
+    D -->|DuckDuckGo| G[Qidiruv natijalari<br/>- ABC Tech<br/>- XYZ IT<br/>- ...]
     
-    K -->|Ma'lumotlarni birlashtiradi| L[📊 Strukturali Ma'lumotlar]
-    L -->|Formatlaydi| M[✍️ Hisobot Tayyorlash]
+    E -->|BeautifulSoup| H[Sayt mazmumlari<br/>- Manzillar<br/>- Telefonlar<br/>- Emaillar]
     
-    M -->|Kompaniya nomlari| N[📝 Tayyor Natija]
-    M -->|Aloqa ma'lumotlari| N
-    M -->|Murojaat xatlari| N
+    G --> I[📦 Ma'lumotlar bazasi]
+    H --> I
     
-    N --> F
-    F -->|Faylga yozadi| O[📁 leads_output.txt]
-    O -->|Ko'rsatadi| P[✅ Foydalanuvchiga natija]
-    P --> A
+    I --> J[🧠 AI TAHLIL VA SINTEZ]
     
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style D fill:#e8f5e9
-    style E fill:#e8f5e9
-    style F fill:#e8f5e9
-    style K fill:#fff4e1
-    style N fill:#f3e5f5
-    style O fill:#fce4ec
-    style P fill:#e1f5ff
+    J --> K[✍️ Hisobot tayyorlash<br/>- Kompaniya 1<br/>- Kompaniya 2<br/>- ...]
+    
+    K --> F
+    
+    F --> L[📁 leads_output.txt]
+    
+    L --> M[✅ TAYYOR NATIJA]
+    
+    M --> A
+    
+    style A fill:#e3f2fd,stroke:#1976d2,stroke-width:3px
+    style B fill:#fff3e0,stroke:#f57c00,stroke-width:3px
+    style D fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    style E fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    style F fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    style J fill:#fff3e0,stroke:#f57c00,stroke-width:3px
+    style L fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    style M fill:#e3f2fd,stroke:#1976d2,stroke-width:3px
 ```
 
 ---
