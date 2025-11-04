@@ -41,30 +41,30 @@ Bularning barchasi **bir necha soniyada** amalga oshadi!
 ### **Bizning loyihamiz qanday ishlaydi?**
 ```mermaid
 graph TB
-    A[👤 FOYDALANUVCHI] -->|Vancouver dan 5 ta<br/>kompaniya kerak| B[🤖 AI AGENT GEMINI]
+    A[FOYDALANUVCHI] -->|Vancouver dan 5 ta<br/>kompaniya kerak| B[AI AGENT GEMINI]
     
     B -->|Topshiriqni tushunadi| C{Reja tuzish}
     
-    C -->|1| D[🔍 SEARCH TOOL]
-    C -->|2| E[📄 SCRAPE TOOL]
-    C -->|3| F[💾 SAVE TOOL]
+    C -->|1| D[SEARCH TOOL]
+    C -->|2| E[SCRAPE TOOL]
+    C -->|3| F[SAVE TOOL]
     
     D -->|DuckDuckGo| G[Qidiruv natijalari<br/>- ABC Tech<br/>- XYZ IT<br/>- ...]
     
     E -->|BeautifulSoup| H[Sayt mazmumlari<br/>- Manzillar<br/>- Telefonlar<br/>- Emaillar]
     
-    G --> I[📦 Ma'lumotlar bazasi]
+    G --> I[Ma'lumotlar bazasi]
     H --> I
     
-    I --> J[🧠 AI TAHLIL VA SINTEZ]
+    I --> J[AI TAHLIL VA SINTEZ]
     
-    J --> K[✍️ Hisobot tayyorlash<br/>- Kompaniya 1<br/>- Kompaniya 2<br/>- ...]
+    J --> K[Hisobot tayyorlash<br/>- Kompaniya 1<br/>- Kompaniya 2<br/>- ...]
     
     K --> F
     
-    F --> L[📁 leads_output.txt]
+    F --> L[leads_output.txt]
     
-    L --> M[✅ TAYYOR NATIJA]
+    L --> M[TAYYOR NATIJA]
     
     M --> A
     
@@ -178,7 +178,7 @@ Bu jarayon 1-2 daqiqa davom etishi mumkin.
 `.env` nomli yangi fayl yarating va ichiga quyidagini yozing:
 
 ```
-GEMINI_API_KEY="bu_yerga_sizning_kalitingiz"
+GOOGLE_API_KEY="bu_yerga_sizning_kalitingiz"
 ```
 
 **MUHIM:** Bu faylni hech kimga ko'rsatmang!
